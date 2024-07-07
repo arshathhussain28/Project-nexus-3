@@ -1,0 +1,470 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Navigation Styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 2rem;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+  }
+  
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background: #ff6600;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #e65500;
+  }
+  
+  /* Common Section Styles */
+  .introduction,
+  .showcase,
+  .testimonials,
+  .partners,
+  .newsletter {
+    text-align: center;
+  }
+  
+  /* Card Styles */
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    width: 45%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .learn-more {
+    display: block;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Testimonials Styles */
+  .testimonials blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+  }
+  
+  /* Partners Styles */
+  .partners .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .partners .logos img {
+    max-width: 100px;
+    margin: 0.5rem;
+  }
+  
+  /* Newsletter Styles */
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsletter button {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background: #0056b3;
+  }
+  
+  /* About Section Styles */
+  #about {
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mission,
+  .vision,
+  .values,
+  .history,
+  .team,
+  .why-choose-us {
+    margin-bottom: 2rem;
+  }
+  
+  .values ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .values ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event {
+    margin-bottom: 1rem;
+  }
+  
+  /* Team and Why Choose Us Section Styles */
+  #team,
+  #why-choose-us {
+    text-align: center;
+  }
+  
+  #team h2,
+  #why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .team-member h3 {
+    margin: 0.5rem 0;
+  }
+  
+  .team-member p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Products Section Styles */
+  #products {
+    text-align: center;
+  }
+  
+  #products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #products p {
+    margin-bottom: 2rem;
+  }
+  
+  .product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 10px;
+  }
+  
+  .product-details {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .product-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product-details p,
+  .product-details ul {
+    margin-bottom: 1rem;
+  }
+  
+  .product-details ul {
+    list-style: disc;
+    padding-left: 2rem;
+  }
+  
+  .product-details a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-details a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contact Section Styles */
+  #contact {
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact p {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-details {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-details p {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  #info-form {
+    margin-top: 1rem;
+  }
+  
+  #info-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #info-form input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 45%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #info-form button {
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #info-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .map {
+    margin-top: 2rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    /* Header */
+    header {
+      padding: 0.5rem 0;
+    }
+  
+    /* Navigation */
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    /* Hero Section */
+    .hero {
+      height: 80vh;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    /* Content Sections */
+    .introduction,
+    .showcase,
+    .testimonials,
+    .partners,
+    .newsletter {
+      padding: 1.5rem;
+    }
+  
+    /* Cards and Team Members */
+    .cards,
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 10px 0;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin: 1rem 0;
+    }
+  
+    /* Partners Logos */
+    .partners .logos {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    /* Newsletter Form */
+    .newsletter form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newsletter input {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+  
+    /* Contact Section */
+    .contact-details {
+      text-align: center;
+    }
+  
+    .social-links {
+      margin-top: 1rem;
+    }
+  
+    .social-link {
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+  }
+  
